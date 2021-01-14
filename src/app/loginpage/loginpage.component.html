@@ -1,0 +1,14 @@
+<h2>
+    Login Form</h2>
+
+<form action="/action_page.php" method="post">
+    <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="user" [(ngModel)]="user" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pass" [(ngModel)]="pass" required>
+
+        <button type="submit" (click)='enter()' [routerLink]="path" routerLinkActive="active">Login</button>
+    </div>
+</form>
