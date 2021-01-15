@@ -17,10 +17,7 @@ export class LoginpageComponent{
   valid:boolean;
 
   enter(){
-    this.valid =this.loginService.enter(this.user , this.pass);
-    if(this.valid){
-      this.path = "/profile";
-    }
+    this.loginService.enter(this.user , this.pass);
   }
 }
 
